@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 adb = new AlertDialog.Builder(MainActivity.this);
-                adb.setTitle("Dialog 1");
-                adb.setMessage("This is a simple message");
+                adb.setTitle("1");
+                adb.setMessage("hello");
                 AlertDialog ad = adb.create();
                 ad.show();
             }
@@ -50,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 adb = new AlertDialog.Builder(MainActivity.this);
-                adb.setTitle("Dialog 2");
-                adb.setMessage("Message with icon");
+                adb.setTitle("2");
+                adb.setMessage("hello");
                 adb.setIcon(R.mipmap.ic_launcher);
                 AlertDialog ad = adb.create();
                 ad.show();
@@ -62,8 +62,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 adb = new AlertDialog.Builder(MainActivity.this);
-                adb.setTitle("Dialog 3");
-                adb.setMessage("Message with icon and close button");
+                adb.setTitle(" 3");
+                adb.setMessage("hello");
                 adb.setIcon(R.mipmap.ic_launcher);
 
                 adb.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -82,18 +82,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 adb = new AlertDialog.Builder(MainActivity.this);
-                adb.setTitle("Dialog 4");
-                adb.setMessage("Choose 2 options:");
+                adb.setTitle("4");
+                adb.setMessage("choose 2 options: ");
                 adb.setIcon(R.mipmap.ic_launcher);
 
-                adb.setPositiveButton("Change", new DialogInterface.OnClickListener() {
+                adb.setPositiveButton("change", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         linlay.setBackgroundColor(getRandColor());
                     }
                 });
 
-                adb.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                adb.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.cancel();
@@ -109,25 +109,25 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 adb = new AlertDialog.Builder(MainActivity.this);
-                adb.setTitle("Dialog 5");
-                adb.setMessage("Choose 3 options:");
+                adb.setTitle("5");
+                adb.setMessage("choose 3 options: ");
                 adb.setIcon(R.mipmap.ic_launcher);
 
-                adb.setPositiveButton("Change", new DialogInterface.OnClickListener() {
+                adb.setPositiveButton("change", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         linlay.setBackgroundColor(getRandColor());
                     }
                 });
 
-                adb.setNeutralButton("Reset", new DialogInterface.OnClickListener() {
+                adb.setNeutralButton("reset", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         linlay.setBackgroundColor(Color.WHITE);
                     }
                 });
 
-                adb.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                adb.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.cancel();
